@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+@@include('./src/html/includes/head.html', {
+  "title": "Тренажёр устного счёта",
+  "description": "Тренажёр устного счёта."
+})
+
+<body class="page__body">
+  <main class="page__main">
+    <h1 class="visually-hidden">Тренажёр устного счёта</h1>
+
+    <section class="page__calc calc">
+      <span class="calc__operand" id="first-operand" tabindex="0">481</span>
+      <span class="calc__operation">&times;</span>
+      <span class="calc__operand" id="second-operand" tabindex="0">516</span>
+      <span class="calc__equals">=</span>
+      <output class="calc__result" id="result" tabindex="0">?</output>
+    </section>
+  </main>
+
+  <footer class="page__footer">
+    <p class="about">
+      <a class="about__link" href="https://github.com/alt-xafiro/mental-calc">GitHub</a>
+      • <a class="about__link" href="https://github.com/alt-xafiro/mental-calc/blob/master/CHANGELOG.md">v1.1</a>
+    </p>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

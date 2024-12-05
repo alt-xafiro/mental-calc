@@ -1,0 +1,13 @@
+// "outline" when element has received focus
+
+@mixin focus-default-styles {
+  outline-width: 2px;
+  outline-style: groove;
+  outline-color: $color-white;
+}
+
+@mixin focus($outline-offset: 0) {
+  @include focus-default-styles;
+
+  outline-offset: $outline-offset;
+}
